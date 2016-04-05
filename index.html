@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TP NOSQL</title>
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/kforms.css" rel="stylesheet">
+	<script src="assets/js/angular.js"></script>
+	<script src="assets/js/lodash.js"></script>	
+	<script src="app.js"></script>
+	<script src="linkService.js"></script>
+	<script src="dataController.js"></script>	
+	<script src="assets/js/jquery-2.1.1.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+</head>
+<body ng-controller="dataController">
+	<div id="wrapper">
+		<nav class="navbar-default navbar-static-side fixed-menu" role="navigation">
+			<div class="sidebar-collapse">
+				<div id="hover-menu"></div>
+				<ul class="nav metismenu" id="side-menu">
+					<li>
+						<div class="leftpanel-profile">
+							<div class="media-left">
+								<a href="#">
+									<img src="assets/img/logo.jpg" class="fullWidth">                                       
+								</a>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="nano left-sidebar">
+							<div class="nano-content heightMenu">
+								
+								<div class="form-group" >
+									<div class="kform inq">
+										<label class="field append-icon">
+											<input type="text" name="search" id="search" class="gui-input" placeholder="Filter by #tags here ..." ng-model="tags.search.value">
+											<label for="search" class="field-icon">
+												<i class="fa fa-search"></i>
+											</label>
+										</label>
+									</div>
+									<div>
+										
+										<div style="clear: both;"></div>
+										<div >
+											<button ng-repeat="tagSelected in tagsSelected" class="btn btn-sm btn-danger btn-rounded btn-tags">#{{tagSelected}}</button>
+										</div>
+										<button class="btn btn-danger fullWidth" ng-click="clearFilters()">Clear filters</div>
+										<hr>
+										<div class="pre-scrollable preScoTags"  data-ng-init="getAllTags()">
+											<button ng-repeat="tag in tags | filter:tags.search" ng-click="addTags(tag.value)" class="btn btn-danger btn-rounded btn-outline btn-tags">#{{tag.value}} ({{tag.score}})</button>
+										</div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div id="page-wrapper" class="gray-bg" >
+			<div>
+				<nav class="navbar navbar-fixed-top white-bg show-menu-full" id="nav" role="navigation" >
+					<div class="navbar-header">
+						<div class="result-navbar">
+							<h2> Result : {{links.length}} links</h2>
+						</div>
+					</div>  
+				</nav>
+			</div>
+			<div class="separatorWrapper"></div>
+
+			<div class="wrapper wrapper-content" data-ng-init="getLastLinks()">
+				<div class="row" >
+					<div class="col-lg-12">
+						<div class="inqbox float-e-margins" ng-repeat="link in links">
+							<div class="inqbox-title border-top-danger" >
+								<div class="well">
+									<h3>{{link.title}}</h3>
+									<hr>
+									<p>{{link.description}}</p>
+									<button ng-repeat="tag in link.tags" class="btn btn-sm btn-danger btn-rounded btn-outline btn-tags">#{{tag}}</button>
+									<a href="{{link.url}}" target="_blank"><button class="btn btn-sm btn-rounded btn-danger">Open this link</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

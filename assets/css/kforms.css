@@ -1,0 +1,1047 @@
+/*  Form Wrappers */
+.kform,
+.kform * {
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box;
+}
+.kform {
+ line-height: 1.231;
+ font-weight: 400;
+ font-size: 14px;
+ color: #626262;
+}
+.kform .section {
+ margin-bottom: 22px;
+}
+.kform .gui-input,
+.kform .gui-textarea,
+.kform .select > select,
+.kform input[type="button"],
+.kform input[type="submit"],
+.kform input[type="search"],
+.kform .select-multiple select {
+ -webkit-tap-highlight-color: transparent;
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: none; 
+}
+.kform .radio,
+.kform .button,
+.kform .checkbox,
+.kform .select .arrow,
+.kform .switch > label,
+.kform .ui-slider .ui-slider-handle {
+ -webkit-touch-callout: none;
+ -webkit-user-select: none;
+ -khtml-user-select: none;
+ -moz-user-select: none;
+ -ms-user-select: none;
+ user-select: none;
+}
+.kform label,
+.kform input,
+.kform button,
+.kform select,
+.kform textarea {
+ margin: 0;
+ font-size: 14px;
+ font-weight: 400;
+ color: #626262;
+ outline: none;
+}
+.kform .radio,
+.kform .button,
+.kform .tooltip,
+.kform .checkbox,
+.kform .gui-input,
+.kform .input-footer,
+.kform .notification,
+.kform .gui-textarea,
+.kform .select > select,
+.kform .select-multiple select {
+ -webkit-transition: all 0.5s ease-in-out;
+ -moz-transition: all 0.5s ease-in-out;
+ -ms-transition: all 0.5s ease-in-out;
+ -o-transition: all 0.5s ease-in-out;
+ transition: all 0.5s ease-in-out;
+ outline: none;
+}
+.kform .input-link,
+.kform .panel-heading,
+.kform .section-divider span,
+.kform .select > select,
+.kform .select-multiple select {
+ -webkit-transition: all 0.2s ease-in-out;
+ -moz-transition: all 0.2s ease-in-out;
+ -ms-transition: all 0.2s ease-in-out;
+ -o-transition: all 0.2s ease-in-out;
+ transition: all 0.2s ease-in-out;
+}
+.kform .spacer {
+ border-top: 1px solid #eee;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ display: block;
+ height: 0;
+}
+.kform .section-divider {
+ height: 0;
+ border-top: 1px solid #DDD;
+ text-align: center;
+ margin-top: 20px;
+ margin-bottom: 30px;
+}
+.kform .section-divider span {
+ display: inline-block;
+ position: relative;
+ padding: 0 17px;
+ background: #fff;
+ color: #999;
+ top: -11px;
+ font-size: 15px;
+}
+.kform.panel .section-divider span,
+.kform .panel .section-divider span,
+.kform.tab-content .section-divider span,
+.kform .tab-content .section-divider span {
+ background: #fff;
+}
+.kform.well .section-divider span,
+.kform .well .section-divider span {
+ background: #f5f5f5;
+}
+.kform .switch,
+.kform .option,
+.kform .field-label {
+ font-size: 14px;
+}
+.kform .field-label[class*='col-'] {
+ line-height: 42px;
+}
+.kform .field-align {
+ line-height: 42px;
+}
+.kform .radio,
+.kform .option,
+.kform .checkbox {
+ cursor: pointer;
+}
+.kform .field {
+ display: block;
+ position: relative;
+}
+.kform .field-icon i {
+ color: #BBB;
+ position: relative;
+}
+.kform .field-label {
+ display: block;
+ margin-bottom: 7px;
+}
+.kform .field-label em {
+ color: #e74c3c;
+ font-size: 14px;
+ font-style: normal;
+ display: inline-block;
+ margin-left: 4px;
+ position: relative;
+ top: 3px;
+}
+.kform .gui-input,
+.kform .gui-textarea {
+ padding: 10px;
+}
+.kform .select,
+.kform .gui-input,
+.kform .gui-textarea,
+.kform .select > select,
+.kform .select-multiple select {
+ position: relative;
+ vertical-align: top;
+ border: 1px solid #DDD;
+ display: -moz-inline-stack;
+ display: inline-block;
+ *display: inline;
+ color: #626262;
+ outline: none;
+ height: 42px;
+ width: 100%;
+ *zoom: 1;
+}
+.kform .select option {
+ background: #fff;
+}
+.kform select[disabled],
+.kform .select > select[disabled] {
+ color: #aaa !important;
+}
+.kform .gui-textarea {
+ resize: none;
+ line-height: 19px;
+ overflow: auto;
+ max-width: 100%;
+ height: 96px;
+}
+.kform .select {
+ border: 0;
+ z-index: 10;
+ background: #FFF;
+}
+.kform .select > select {
+ display: block;
+ z-index: 10;
+ margin: 0;
+ padding: 9px 10px;
+ color: #626262;
+ outline: none;
+ text-indent: 0.01px;
+ text-overflow: '';
+ background: #FFF;
+ border: 1px solid #DDD;
+ -webkit-appearance: none;
+ -moz-appearance: none;
+ appearance: normal;
+}
+.kform .select:before,
+.kform .select:after {
+ background: #FFF;
+}
+.kform .select > select::-ms-expand {
+ display: none;
+}
+.kform .select .arrow {
+ pointer-events: none;
+ position: absolute;
+ top: 9px;
+ right: 4px;
+ width: 24px;
+ height: 24px;
+ color: #9F9F9F;
+ z-index: 100;
+}
+.kform .select .arrow:after,
+.kform .select .arrow:before {
+ content: '';
+ position: absolute;
+ font: 12px "Consolas", monospace;
+ font-style: normal;
+ pointer-events: none;
+ display: none\9;
+ left: 5px;
+}
+.kform .select .arrow:before {
+ content: '\25BC';
+ bottom: 4px;
+}
+.kform .select .double:after {
+ content: '\25B2';
+ top: -1px;
+}
+.kform .select .double:before {
+ content: '\25BC';
+ bottom: -1px;
+}
+.kform .select-multiple select {
+ width: 100%;
+ height: 123px;
+ padding: 10px;
+}
+.kform .file {
+ display: block;
+ width: 100%;
+}
+.kform .file .gui-file {
+ width: 100%;
+ height: 100%;
+ cursor: pointer;
+ padding: 8px 10px;
+ position: absolute;
+ -moz-opacity: 0;
+ opacity: 0;
+ z-index: 11;
+ bottom: 0;
+ right: 0;
+}
+.kform .file .button {
+ position: absolute;
+ top: 4px;
+ right: 4px;
+ float: none;
+ height: 34px;
+ line-height: 34px;
+ padding: 0 16px;
+ z-index: 10;
+}
+.kform .file.append-button .button {
+ left: 4px;
+ right: auto;
+}
+.kform .file.append-button > input.gui-input {
+ padding-right: 40px;
+ padding-left: 125px;
+ text-align: right;
+}
+.kform .file.append-button > label.field-icon {
+ right: 4px;
+ left: auto;
+}
+.kform .gui-input:hover,
+.kform .gui-textarea:hover,
+.kform .select > select:hover,
+.kform .select-multiple select:hover,
+.kform .gui-input:hover ~ .input-footer,
+.kform .file .gui-file:hover + .gui-input,
+.kform .gui-textarea:hover ~ .input-footer {
+ border-color: #ccc;
+}
+.kform .gui-input:focus,
+.kform .gui-textarea:focus,
+.kform .select > select:focus,
+.kform .select-multiple select:focus {
+ color: #3c3c3c;
+ background: #fff;
+ border: 1px solid #1c84c6;
+ outline: none;
+}
+.kform .select > select:focus {
+ z-index: 10;
+ z-index: 20\9;
+}
+.kform .gui-textarea:focus {
+ height: 120px;
+}
+.kform .select > select:focus {
+ z-index: 10;
+ z-index: 20\9;
+}
+.kform .gui-input:focus ~ .field-icon i,
+.kform .gui-textarea:focus ~ .field-icon i {
+ color: #999;
+}
+.kform .select-multiple select:focus,
+.kform .gui-input:focus ~ .input-footer,
+.kform .gui-textarea:focus ~ .input-footer,
+.kform .file .gui-file:focus + .gui-input {
+ border-color: #999;
+}
+.kform .select > select:focus + .arrow {
+ color: #999;
+}
+.kform .option {
+ position: relative;
+ padding-right: 15px;
+ display: inline-block;
+ vertical-align: middle;
+}
+.kform .option > input {
+ position: absolute;
+ height: inherit;
+ width: inherit;
+ opacity: 0;
+ left: 0;
+}
+.kform .checkbox,
+.kform .radio {
+ cursor: pointer;
+ position: relative;
+ margin-right: 5px;
+ background: #fff;
+ display: inline-block;
+ border: 3px solid #DDD;
+ height: 21px;
+ width: 21px;
+ top: 4px;
+}
+.kform .checkbox:before,
+.kform .radio:before {
+ content: '';
+ display: none;
+}
+.kform input:checked + .checkbox:before,
+.kform input:checked + .radio:before {
+ display: block;
+}
+.kform .checkbox:before {
+ position: absolute;
+ top: 4px;
+ left: 3px;
+ width: 6px;
+ height: 3px;
+ border: solid #888;
+ border-width: 0 0 3px 3px;
+ -webkit-transform: rotate(-45deg);
+ -moz-transform: rotate(-45deg);
+ -ms-transform: rotate(-45deg);
+ -o-transform: rotate(-45deg);
+ transform: rotate(-45deg);
+}
+.kform input:checked + .checkbox,
+.kform input:checked + .radio {
+ border: 3px solid #888;
+}
+.kform .radio {
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ -o-border-radius: 20px;
+ border-radius: 20px;
+}
+.kform .radio:before {
+ margin: 4px;
+ width: 7px;
+ height: 7px;
+ background: #888;
+ -webkit-border-radius: 10px;
+ -moz-border-radius: 10px;
+ -o-border-radius: 10px;
+ border-radius: 10px;
+}
+.kform input:not([disabled]):hover + .checkbox,
+.kform input:not([disabled]):hover + .radio {
+ border-color: #666;
+}
+.kform input:focus + .checkbox,
+.kform input:focus + .radio {
+ border-color: #666;
+}
+.kform input:focus + .radio:before {
+ background: #666;
+}
+.kform input:focus + .checkbox:before {
+ border-color: #666;
+}
+.kform .switch {
+ cursor: pointer;
+ position: relative;
+ padding-right: 10px;
+ display: inline-block;
+ margin-bottom: 5px;
+ height: 26px;
+}
+.kform .switch > label {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ height: 25px;
+ width: 58px;
+ color: #fff;
+ font-size: 10px;
+ font-weight: bold;
+ line-height: 20px;
+ text-align: center;
+ background: #D7D7D7;
+ border: 2px solid #D7D7D7;
+ text-transform: uppercase;
+ font-family: Helvetica, Arial, sans-serif;
+ -webkit-transition: 0.3s ease-out;
+ -moz-transition: 0.3s ease-out;
+ -o-transition: 0.3s ease-out;
+ transition: 0.3s ease-out;
+ -webkit-border-radius: 3px;
+ border-radius: 3px;
+}
+.kform .switch > label + span {
+ display: inline-block;
+ padding-left: 5px;
+ position: relative;
+ top: -7px;
+}
+.kform .switch > label:before {
+ content: attr(data-off);
+ position: absolute;
+ top: 1px;
+ right: 3px;
+ width: 33px;
+}
+.kform .switch > label:after {
+ content: "";
+ margin: 1px;
+ width: 19px;
+ height: 19px;
+ display: block;
+ background: #fff;
+ -webkit-border-radius: 2px;
+ border-radius: 2px;
+}
+.kform .switch > input {
+ -webkit-appearance: none;
+ position: absolute;
+ width: inherit;
+ height: inherit;
+ opacity: 0;
+ left: 0;
+ top: 0;
+}
+.kform .switch > input:focus {
+ outline: none;
+}
+.kform .switch > input:focus + label {
+ color: #fff;
+ border-color: #C7C7C7;
+ background: #C7C7C7;
+}
+.kform .switch > input:focus + label:after {
+ background: #fff;
+}
+.kform .switch > input:checked + label {
+ border-color: #999;
+ background: #999;
+ padding-left: 33px;
+ color: white;
+}
+.kform .switch > input:checked + label:before {
+ content: attr(data-on);
+ left: 1px;
+ top: 1px;
+}
+.kform .switch > input:checked + label:after {
+ margin: 1px;
+ width: 19px;
+ height: 19px;
+ background: white;
+}
+.kform .switch > input:checked:focus + label {
+ background: #555;
+ border-color: #555;
+}
+.kform .switch-round > label {
+ -webkit-border-radius: 13px;
+ -moz-border-radius: 13px;
+ -o-border-radius: 13px;
+ border-radius: 13px;
+}
+.kform .switch-round > label + span {
+ top: -2px;
+}
+.kform .switch-round > label:before {
+ width: 33px;
+}
+.kform .switch-round > label:after {
+ width: 19px;
+ color: #D7D7D7;
+ content: "\2022";
+ font: 20px/20px Times, Serif;
+ -webkit-border-radius: 13px;
+ -moz-border-radius: 13px;
+ -o-border-radius: 13px;
+ border-radius: 13px;
+}
+.kform .switch-round > input:checked + label {
+ padding-left: 33px;
+}
+.kform .switch-round > input:checked + label:after {
+ color: #999;
+}
+.kform .switch-custom > label {
+ background: #f3a79b;
+ border-color: #f3a79b;
+}
+.kform .switch-custom > input:hover + label,
+.kform .switch-custom > input:focus + label {
+ background: #e74b31;
+ border-color: #e74b31;
+}
+.kform .switch-custom > input:checked + label {
+ background: #70ca63;
+ border-color: #70ca63;
+}
+.kform .switch-custom > input:checked:hover + label,
+.kform .switch-custom > input:checked:focus + label {
+ background: #47a839;
+ border-color: #47a839;
+}
+.kform .button[disabled],
+.kform .state-disabled .button,
+.kform input[disabled] + .radio,
+.kform input[disabled] + .checkbox,
+.kform .switch > input[disabled] + label {
+ cursor: default;
+ opacity: 0.5;
+}
+.kform .gui-input[disabled],
+.kform .gui-textarea[disabled],
+.kform .select > select[disabled],
+.kform .select-multiple select[disabled],
+.kform .gui-input[disabled] ~ .input-footer,
+.kform .file .gui-file[disabled] + .gui-input,
+.kform .file .gui-file[disabled]:hover + .gui-input,
+.kform .gui-textarea[disabled] ~ .input-footer {
+ background-color: #f4f6f6;
+ border-color: #d5dbdb!important;
+ cursor: default;
+ color: #d5dbdb;
+ opacity: 0.7;
+}
+.kform input[disabled] ~ .field-icon i,
+.kform textarea[disabled] ~ .field-icon i,
+.kform .select > select[disabled] + .arrow {
+ opacity: 0.4;
+}
+.kform .input-footer {
+ padding: 10px;
+ display: block;
+ margin-top: -1px;
+ line-height: 16px;
+ position: relative;
+ background: #F5F5F5;
+ border: 1px solid #DDD;
+ font-family: Arial, Helvetica, sans-serif;
+ -webkit-border-radius: 0;
+ -moz-border-radius: 0;
+ -o-border-radius: 0;
+ border-radius: 0;
+ font-size: 11px;
+ color: #999;
+}
+.kform .append-icon,
+.kform .prepend-icon {
+ top: 0;
+ left: 0;
+ display: inline-block;
+ vertical-align: top;
+ position: relative;
+ width: 100%;
+}
+.kform .append-icon .field-icon,
+.kform .prepend-icon .field-icon {
+ top: 0;
+ z-index: 4;
+ width: 42px;
+ height: 42px;
+ color: inherit;
+ line-height: 42px;
+ position: absolute;
+ text-align: center;
+ -webkit-transition: all 0.5s ease-out;
+ -moz-transition: all 0.5s ease-out;
+ -ms-transition: all 0.5s ease-out;
+ -o-transition: all 0.5s ease-out;
+ transition: all 0.5s ease-out;
+ pointer-events: none;
+}
+.kform .append-icon .field-icon i,
+.kform .prepend-icon .field-icon i {
+ position: relative;
+ font-size: 14px;
+}
+.kform .prepend-icon .field-icon {
+ left: 0;
+}
+.kform .append-icon .field-icon {
+ right: 0;
+}
+.kform .prepend-icon > input,
+.kform .prepend-icon > textarea {
+ padding-left: 36px;
+}
+.kform .append-icon > input,
+.kform .append-icon > textarea {
+ padding-right: 36px;
+ padding-left: 10px;
+}
+.kform .append-icon > textarea {
+ padding-right: 36px;
+}
+.kform .tooltip {
+ position: absolute;
+ z-index: -1;
+ opacity: 0;
+ color: #fff;
+ width: 184px;
+ left: -9999px;
+ top: auto;
+ font-size: 11px;
+ font-weight: normal;
+ background: #666;
+ -webkit-transition: margin 0.6s, opacity 0.6s;
+ -moz-transition: margin 0.6s, opacity 0.6s;
+ -ms-transition: margin 0.6s, opacity 0.6s;
+ -o-transition: margin 0.6s, opacity 0.6s;
+ transition: margin 0.6s, opacity 0.6s;
+ -webkit-border-radius: 3px;
+ border-radius: 3px;
+}
+.kform .tooltip > em {
+ padding: 12px;
+ font-style: normal;
+ display: block;
+ position: static;
+}
+.kform .tooltip:after {
+ content: '';
+ position: absolute;
+}
+.kform .gui-input:focus + .tooltip,
+.kform .gui-textarea:focus + .tooltip {
+ opacity: 1;
+ z-index: 999;
+}
+.kform .tip-left {
+ top: 1px;
+ margin-right: -20px;
+}
+.kform .tip-left:after {
+ top: 12px;
+ left: 100%;
+ border-left: 8px solid #666;
+ border-top: 8px solid transparent;
+ border-bottom: 8px solid transparent;
+}
+.kform .gui-input:focus + .tip-left,
+.kform .gui-textarea:focus + .tip-left {
+ margin-right: 5px;
+ right: 100%;
+ left: auto;
+}
+.kform .tip-right {
+ top: 1px;
+ margin-left: -20px;
+}
+.kform .tip-right:after {
+ top: 12px;
+ right: 100%;
+ border-right: 8px solid #666;
+ border-top: 8px solid transparent;
+ border-bottom: 8px solid transparent;
+}
+.kform .gui-input:focus + .tip-right,
+.kform .gui-textarea:focus + .tip-right {
+ left: 100%;
+ margin-left: 5px;
+}
+.kform .tip-right-top {
+ bottom: 100%;
+ margin-bottom: -20px;
+}
+.kform .tip-right-top:after {
+ top: 100%;
+ right: 12px;
+ border-top: 8px solid #666;
+ border-right: 8px solid transparent;
+ border-left: 8px solid transparent;
+}
+.kform .gui-input:focus + .tip-right-top,
+.kform .gui-textarea:focus + .tip-right-top {
+ right: 0;
+ left: auto;
+ margin-bottom: 10px;
+}
+.kform .tip-left-top {
+ bottom: 100%;
+ margin-bottom: -20px;
+}
+.kform .tip-left-top:after {
+ top: 100%;
+ left: 12px;
+ border-top: 8px solid #666;
+ border-right: 8px solid transparent;
+ border-left: 8px solid transparent;
+}
+.kform .gui-input:focus + .tip-left-top,
+.kform .gui-textarea:focus + .tip-left-top {
+ left: 0;
+ right: auto;
+ margin-bottom: 10px;
+}
+.kform .tip-right-bottom {
+ top: 100%;
+ margin-top: -20px;
+}
+.kform .tip-right-bottom:after {
+ right: 12px;
+ bottom: 100%;
+ border-bottom: 8px solid #666;
+ border-right: 8px solid transparent;
+ border-left: 8px solid transparent;
+}
+.kform .gui-input:focus + .tip-right-bottom,
+.kform .gui-textarea:focus + .tip-right-bottom {
+ margin-top: 10px;
+ left: auto;
+ right: 0;
+}
+.kform .tip-left-bottom {
+ top: 100%;
+ margin-top: -20px;
+}
+.kform .tip-left-bottom:after {
+ left: 12px;
+ bottom: 100%;
+ border-bottom: 8px solid #666;
+ border-right: 8px solid transparent;
+ border-left: 8px solid transparent;
+}
+.kform .gui-input:focus + .tip-left-bottom,
+.kform .gui-textarea:focus + .tip-left-bottom {
+ margin-top: 10px;
+ right: auto;
+ left: 0;
+}
+.kform .rating {
+ overflow: hidden;
+}
+.kform .rating.block {
+ display: block;
+ margin: 10px 0;
+}
+.kform .rating label {
+ color: #CCC;
+}
+.kform .rating label i {
+ font-size: 17px;
+ text-align: center;
+ color: inherit;
+}
+.kform .rating label span {
+ font: 22px/22px Times, Serif;
+}
+.kform .rating-star {
+ margin-left: 4px;
+}
+.kform .rating-input {
+ position: absolute;
+ left: -9999px;
+ top: auto;
+}
+.kform .rating:hover .rating-star:hover,
+.kform .rating:hover .rating-star:hover ~ .rating-star,
+.kform .rating-input:checked ~ .rating-star {
+ color: #666;
+}
+.kform .rating-star,
+.kform .rating:hover .rating-star {
+ width: 18px;
+ float: right;
+ display: block;
+ cursor: pointer;
+ color: #CCC;
+}
+.wizard {
+ background-color: #FFF;
+}
+.wizard .steps {
+ text-align: center;
+ padding: 20px 15px 10px;
+ border: 1px solid #E8E8E8;
+ border-bottom: 0;
+}
+.wizard .steps ul,
+.wizard .steps li {
+ list-style: none;
+ text-decoration: none;
+ padding: 0;
+ margin: 0;
+}
+.wizard .steps li {
+ display: inline-block;
+ margin-right: 10px;
+ background-color: #649ae1;
+}
+.wizard .steps li.last {
+ margin-right: 0;
+}
+.wizard .steps li.disabled a {
+ cursor: not-allowed;
+}
+.wizard .steps li a {
+ display: inline-block;
+ color: #FFF;
+ font-size: 15px;
+ text-align: center;
+ padding: 12px 18px;
+ text-decoration: none;
+ -webkit-user-drag: none;
+}
+.wizard .steps li.current {
+ background-color: #2e76d6;
+}
+.wizard .steps li.disabled {
+ background-color: #BBBBBB !important;
+}
+.wizard .steps li.current a:focus {
+ outline-color: transparent;
+}
+.wizard .steps li a .current-info,
+.wizard .steps li a .number {
+ display: none;
+}
+.wizard .content {
+ background-color: #ffffff;
+ border: 1px solid #E8E8E8;
+ border-top: 0;
+}
+.wizard .content + .actions {
+ border-top: 0;
+}
+.wizard .wizard-section-title {
+ display: none;
+}
+.wizard .wizard-section.body {
+ padding: 15px;
+}
+.wizard .actions {
+ padding: 10px 15px;
+ background-color: #f8f8f8;
+ border: 1px solid #E8E8E8;
+}
+.wizard .actions ul {
+ list-style: none;
+ text-decoration: none;
+ padding: 0;
+ margin: 0;
+ float: right;
+}
+.wizard .actions li {
+ display: inline-block;
+ margin-left: 10px;
+}
+.wizard .actions li a {
+ display: inline-block;
+ color: #FFF;
+ padding: 9px 18px;
+ background-color: #4a89dc;
+ text-decoration: none;
+ -webkit-user-drag: none;
+}
+.wizard .actions li.disabled a {
+ cursor: not-allowed;
+ background-color: #BBB !important;
+}
+.wizard.steps-hide-icons .steps .fa,
+.wizard.steps-hide-icons .steps .glyphicon,
+.wizard.steps-hide-icons .steps .glyphicon {
+ display: none !important;
+}
+.wizard.steps-show-icons .steps .fa,
+.wizard.steps-show-icons .steps .glyphicon,
+.wizard.steps-show-icons .steps .glyphicon {
+ display: inline-block !important;
+}
+.wizard.steps-left .steps {
+ text-align: left;
+}
+.wizard.steps-right .steps {
+ text-align: right;
+}
+.wizard.steps-tabs .steps {
+ padding: 0;
+ height: 55px;
+ position: relative;
+ background-color: #EEE;
+ border-color: transparent;
+ border-bottom: 1px solid #E8E8E8;
+}
+.wizard.steps-tabs .steps li {
+ margin: 0;
+}
+.wizard.steps-tabs .steps li a {
+ padding: 18px 23px 18px;
+}
+.wizard.steps-justified .steps {
+ position: relative;
+ width: 100%;
+ height: auto;
+}
+.wizard.steps-justified .steps li {
+ display: table-cell;
+ position: relative;
+ float: none;
+ width: 1%;
+ vertical-align: middle;
+}
+.wizard.steps-justified .steps li a {
+ display: block;
+}
+.wizard.steps-bg .steps {
+ padding: 15px;
+ position: relative;
+ background-color: #f8f8f8;
+ border-bottom: 1px solid #E8E8E8;
+}
+.wizard.steps-bg.steps-tabs .steps {
+ padding: 0;
+ border-color: #E8E8E8;
+}
+.wizard.steps-bg .content,
+.wizard.steps-tabs .content,
+.wizard.steps-justified .content {
+ padding-top: 10px;
+}
+.kform .radio,
+.kform .checkbox {
+ margin-top: 0;
+ margin-bottom: 0;
+ padding-left: 0;
+ top: 1px;
+ vertical-align: bottom;
+}
+.kform .checkbox:after,
+.kform .checkbox:before {
+ margin: 0;
+ padding: 0;
+ -webkit-box-sizing: content-box;
+ -moz-box-sizing: content-box;
+ -o-box-sizing: content-box;
+ box-sizing: content-box;
+}
+.kform.inq .gui-textarea:focus {
+ height: 120px;
+}
+.kform.inq .select > select:focus {
+ z-index: 10;
+ z-index: 20\9;
+}
+.kform.inq .gui-input:focus ~ .field-icon i,
+.kform.inq .gui-textarea:focus ~ .field-icon i {
+ color: #4a89dc;
+}
+.kform.inq .select-multiple select:focus,
+.kform.inq .gui-input:focus ~ .input-footer,
+.kform.inq .gui-textarea:focus ~ .input-footer,
+.kform.inq .file .gui-file:focus + .gui-input {
+ border-color: #5d9cec;
+}
+.kform.inq .select > select:focus + .arrow {
+ color: #4a89dc;
+}
+.kform.inq .rating:hover .rating-star:hover,
+.kform.inq .rating:hover .rating-star:hover ~ .rating-star,
+.kform.inq .rating-input:checked ~ .rating-star {
+ color: #4a89dc;
+}
+.kform.inq .rating-star,
+.kform.inq .rating:hover .rating-star {
+ color: #A2A6A8;
+}
+.kform.inq .ui-datepicker .ui-datepicker-prev,
+.kform.inq .ui-datepicker .ui-datepicker-next,
+.kform.inq .ui-datepicker .ui-datepicker-title {
+ color: #4a89dc;
+}
+.kform.inq .ui-datepicker-today a,
+.kform.inq .ui-datepicker-today a:hover,
+.kform.inq .ui-datepicker .ui-state-highlight {
+ background: #9fc1ed !important;
+}
+.kform.inq .ui-datepicker .ui-state-active {
+ background: #4a89dc !important;
+}
+.kform.inq .ui-datepicker .ui-timepicker-div .ui-slider .ui-slider-handle.ui-state-active {
+ background: #FFF !important;
+}
+.kform.inq .ui-datepicker .ui-timepicker-div .ui-slider .ui-slider-handle {
+ border-color: #4a89dc;
+}
+.kform.inq .ui-datepicker .ui-timepicker-div .ui-slider .ui-slider-handle:before {
+ background-color: #4a89dc;
+}
+.kform.inq .wizard .steps li {
+ background-color: #4a89dc;
+}
+.kform.inq .wizard .steps li.current {
+ background-color: #2e76d6;
+}
+.kform.inq .wizard .actions li a {
+ background-color: #4a89dc;
+}
